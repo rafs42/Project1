@@ -9,7 +9,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World3" );
-        System.out.println(DigestUtils.sha256("helloworld"));
+        System.out.println( getsha256("Hello World3" ));
+    }
+
+    public static String getsha256(String p1)
+    {
+        return(DigestUtils.sha256(p1).toString());
     }
 }
